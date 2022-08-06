@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook</title>
+  </head>
+  <body>
+    <script>
+      let database = [
+        {
+          username: "vinod",
+          password: "thapa",
+        },
+      ];
+      let status = [
+        {
+          name: "thapatechnical",
+          status: " I am  immortal",
+        },
+        {
+          name: "Anirban",
+          status: "I will help him in becoming immortal",
+        },
+      ];
+      const username = prompt("Enter your name");
+      const password = prompt("Enter your password");
+
+      const login = (user, password) => {
+        if (
+          user === database[0].username &&
+          password === database[0].password
+        ) {
+          console.log(status);
+          for (let value of status) {
+            console.log(value);
+          }
+        } else {
+          alert("WRONG ENTRY");
+        }
+      };
+      login(username, password);
+    </script>
+  </body>
+</html>
